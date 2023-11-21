@@ -1,0 +1,29 @@
+﻿<Window x:Class="ЛАБ3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ЛАБ3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="461" Width="800">
+    <Grid Margin="0,0,0,-16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="139*"/>
+            <RowDefinition Height="144*"/>
+            <RowDefinition Height="89*"/>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="22*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock FontSize="30" Margin="20,40,20,50">Введите значение а:</TextBlock>
+        <TextBlock Grid.Row="1" FontSize="30" Margin="20,43,20,53">Введите значение b:</TextBlock>
+        <TextBox Name="TextBox1" Grid.Column="1" Margin="30,43,30,43" UndoLimit="130" SelectionOpacity="60"></TextBox>
+        <TextBox Name="textbox2" Grid.Column="2" Margin="30,43,30,43" UndoLimit="130" SelectionOpacity="60" RenderTransformOrigin="0.509,4.554" Grid.Row="1"></TextBox>
+        <TextBox Name="answer" Grid.Row="2" Grid.ColumnSpan="2" Height="42" VerticalAlignment="Center" Margin="170,0,171,0"/>
+        <Button Content="вычислить" Click="Button_Click" FontSize="20" Grid.ColumnSpan="2" Margin="137,10,137,12" Grid.Row="3"/>
+    </Grid>
+</Window>
